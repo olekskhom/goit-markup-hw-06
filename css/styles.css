@@ -854,6 +854,7 @@ button {
 
 .modal-form-icon-box {
   position: relative;
+  display: block;
 }
 
 .modal-form-input-icon {
@@ -890,9 +891,13 @@ button {
 
   color: rgba(46, 47, 66, 0.4);
 
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
   outline: none;
+}
+
+.modal-form-label-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-form-btn {
