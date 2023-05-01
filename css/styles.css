@@ -933,6 +933,12 @@ button {
 }
 
 /*  */
+.modal-agree-checkbox-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .modal-form-checkbox-descr {
   font-size: 12px;
   line-height: calc(14 / 12);
