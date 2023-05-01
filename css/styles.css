@@ -511,6 +511,11 @@ button {
   background-color: #31d0aa;
 }
 
+.footer-info-box {
+  display: flex;
+  gap: 80px;
+}
+
 /* ===== portfolio ===== */
 
 .portfolio {
@@ -707,7 +712,6 @@ button {
 /* =========== FORM =========== */
 .footer-form-block {
   width: 453px;
-  margin-left: -40px;
 }
 
 .footer-form {
@@ -802,6 +806,7 @@ button {
 
 .modal-form {
   padding-top: 72px;
+  padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
 
@@ -822,9 +827,15 @@ button {
   color: var(--maine-color);
 }
 
+/* 1/05 */
+.modal-form-label {
+  margin-bottom: 8px;
+}
+/*  */
+
 .modal-form-input {
   width: 100%;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   height: 40px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -833,6 +844,12 @@ button {
   padding-left: 38px;
 
   outline: none;
+  /*  */
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-icon-box {
@@ -841,10 +858,10 @@ button {
 
 .modal-form-input-icon {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  margin-left: 16px;
-  margin-top: 8px;
+
+  transform: translate(50%, -50%);
 
   fill: var(--maine-color);
 }
@@ -866,9 +883,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
-  padding-top: 8px;
-  padding-left: 16px;
-
+  padding: 8px 16px;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.04em;
@@ -898,8 +913,6 @@ button {
   width: 169px;
 
   transition: background-color var(--animation);
-
-  margin-bottom: 24px;
 }
 
 .modal-form-btn:hover,
@@ -908,6 +921,7 @@ button {
 }
 
 .modal-form-input-descr {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -934,7 +948,6 @@ button {
 }
 
 .modal-form-checkbox {
-  margin-right: 8px;
   appearance: none;
   width: 16px;
   height: 16px;
@@ -949,6 +962,7 @@ button {
 .modal-agree-checkbox {
   position: relative;
   display: flex;
+  margin-right: 8px;
 }
 
 .modal-form-agree-icon {
@@ -969,4 +983,5 @@ button {
 
 .privacy-link {
   color: var(--accent-color);
+  text-decoration: underline;
 }
